@@ -1,0 +1,721 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "MDEV Shopify Boilerplate",
+    "theme_author": "MDEV Digital",
+    "theme_version": "1.0",
+    "theme_documentation_url": "http:\/\/mdev.digital",
+    "theme_support_email": "support@mdev.digital"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "General"
+      },
+      {
+        "type": "color",
+        "id": "color_background",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "id": "color_headings",
+        "label": "Headings"
+      },
+      {
+        "type": "color",
+        "id": "color_text",
+        "label": "Text"
+      },
+      {
+        "type": "color",
+        "id": "color_links",
+        "label": "Links"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "type": "color",
+        "id": "color_button_background",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "id": "color_button_text",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Header"
+      },
+      {
+        "type": "color",
+        "id": "color_header_background",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "id": "color_header_text",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Footer"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_background",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "id": "color_footer_text",
+        "label": "Text"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Base text"
+      },
+      {
+        "type": "select",
+        "id": "font_body",
+        "label": "Font",
+        "options": [
+          {
+            "value": "Google_Abel",
+            "label": "Abel",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Alegreya+Sans_400,400i,700,700i",
+            "label": "Alegreya Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Archivo+Narrow",
+            "label": "Archivo Narrow",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Arimo_400,400i,700,700i",
+            "label": "Arimo",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Cabin_400,400i,700,700i",
+            "label": "Cabin",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Fira+Sans_400,400i,700,700i",
+            "label": "Fira Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Heebo_400,700",
+            "label": "Heebo",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Istok+Web_400,400i,700,700i",
+            "label": "Istok Web",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Josefin+Sans_400,400i,700,700i",
+            "label": "Josefin Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Lato_400,400i,700,700i",
+            "label": "Lato",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Libre+Franklin_400,400i,700,700i",
+            "label": "Libre Franklin",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Merriweather+Sans_400,400i,700,700i",
+            "label": "Merriweather Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Montserrat_400,400i,700,700i",
+            "label": "Montserrat",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_News+Cycle_400,700",
+            "label": "News Cycle",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Open+Sans_400,400i,700,700i",
+            "label": "Open Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Palanquin+Dark",
+            "label": "Palanquin Dark",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Palanquin_400,700",
+            "label": "Palanquin",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Prompt_400,400i,700,700i",
+            "label": "Prompt",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Quattrocento+Sans_400,400i,700,700i",
+            "label": "Quattrocento Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Raleway_400,400i,700,700i",
+            "label": "Raleway",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Roboto+Condensed_400,400i,700,700i",
+            "label": "Roboto Condensed",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Roboto_400,400i,700,700i",
+            "label": "Roboto",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Sintony",
+            "label": "Sintony",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Source+Sans+Pro_400,400i,700,700i",
+            "label": "Source Sans+Pro",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Squada+One",
+            "label": "Squada One",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Titillium+Web_400,400i,700,700i",
+            "label": "Titillium Web",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Work+Sans_400,700",
+            "label": "Work Sans",
+            "group": "Sans-serif"
+          }
+        ],
+        "default": "Google_Cabin_400,400i,700,700i"
+      },
+      {
+        "type": "header",
+        "content": "Headings"
+      },
+      {
+        "type": "select",
+        "id": "font_heading",
+        "label": "Font",
+        "options": [
+          {
+            "value": "Google_Abel",
+            "label": "Abel",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Alegreya+Sans_400,400i,700,700i",
+            "label": "Alegreya Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Archivo+Narrow",
+            "label": "Archivo Narrow",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Arimo_400,400i,700,700i",
+            "label": "Arimo",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Cabin_400,400i,700,700i",
+            "label": "Cabin",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Fira+Sans_400,400i,700,700i",
+            "label": "Fira Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Heebo_400,700",
+            "label": "Heebo",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Istok+Web_400,400i,700,700i",
+            "label": "Istok Web",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Josefin+Sans_400,400i,700,700i",
+            "label": "Josefin Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Lato_400,400i,700,700i",
+            "label": "Lato",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "\"League Spartan\", sans-serif",
+            "label": "League Spartan",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Libre+Franklin_400,400i,700,700i",
+            "label": "Libre Franklin",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Merriweather+Sans_400,400i,700,700i",
+            "label": "Merriweather Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Montserrat_400,400i,700,700i",
+            "label": "Montserrat",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_News+Cycle_400,700",
+            "label": "News Cycle",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Open+Sans_400,400i,700,700i",
+            "label": "Open Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Palanquin+Dark",
+            "label": "Palanquin Dark",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Palanquin_400,700",
+            "label": "Palanquin",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Prompt_400,400i,700,700i",
+            "label": "Prompt",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Quattrocento+Sans_400,400i,700,700i",
+            "label": "Quattrocento Sans",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Raleway_400,400i,700,700i",
+            "label": "Raleway",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Roboto+Condensed_400,400i,700,700i",
+            "label": "Roboto Condensed",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Roboto_400,400i,700,700i",
+            "label": "Roboto",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Sintony",
+            "label": "Sintony",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Source+Sans+Pro_400,400i,700,700i",
+            "label": "Source Sans+Pro",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Squada+One",
+            "label": "Squada One",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Titillium+Web_400,400i,700,700i",
+            "label": "Titillium Web",
+            "group": "Sans-serif"
+          },
+          {
+            "value": "Google_Work+Sans_400,700",
+            "label": "Work Sans",
+            "group": "Sans-serif"
+          }
+        ],
+        "default": "Google_Cabin_400,400i,700,700i"
+      }
+    ]
+  },
+  {
+    "name": "Products",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "product_show_vendor",
+        "label": "Show vendor",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "product_enable_recently_viewed_products",
+        "label": "Enable recently viewed products",
+        "default": false,
+        "info": "Note: This will display on both the collection and product pages."
+      },
+      {
+        "id": "product_option_style",
+        "type": "select",
+        "label": "Option style",
+        "options": [
+          {
+            "value": "select",
+            "label": "Dropdown"
+          },
+          {
+            "value": "radio",
+            "label": "Selectable boxes"
+          }
+        ],
+        "default": "select"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_sales_badge",
+        "label": "Enable sale badges",
+        "default": true
+      },
+      {
+        "id": "product_sales_badge_style",
+        "type": "select",
+        "label": "Sale badge style",
+        "options": [
+          {
+            "value": "percentile",
+            "label": "Save 10%"
+          },
+          {
+            "value": "money",
+            "label": "Save $10"
+          },
+          {
+            "value": "text",
+            "label": "Sale"
+          }
+        ],
+        "default": "percentile"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_ratings_reviews",
+        "label": "Enable product reviews and ratings ([?](https:\/\/apps.shopify.com\/product-reviews))",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "product_social_sharing",
+        "label": "Enable social sharing",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_dcb",
+        "label": "Show dynamic checkout button in quickshop",
+        "info": "Lets customers check out directly using a familiar payment method. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "product_slideshow_style",
+        "label": "Slideshow aspect ratio",
+        "info": "The background in the editor indicates the applied white space, but will not appear on your storefront.",
+        "options": [
+          {
+            "group": "Uncropped",
+            "value": "natural",
+            "label": "Natural"
+          },
+          {
+            "group": "Uncropped",
+            "value": "short",
+            "label": "Short (4:3)"
+          },
+          {
+            "group": "Uncropped",
+            "value": "square",
+            "label": "Square (1:1)"
+          },
+          {
+            "group": "Uncropped",
+            "value": "tall",
+            "label": "Tall (2:3)"
+          },
+          {
+            "group": "Cropped",
+            "value": "cropped-short",
+            "label": "Short (4:3)"
+          },
+          {
+            "group": "Cropped",
+            "value": "cropped-square",
+            "label": "Square (1:1)"
+          },
+          {
+            "group": "Cropped",
+            "value": "cropped-tall",
+            "label": "Tall (2:3)"
+          }
+        ],
+        "default": "natural"
+      },
+      {
+        "type": "header",
+        "content": "Product grid"
+      },
+      {
+        "type": "checkbox",
+        "id": "product_grid_emphasize_price",
+        "label": "Emphasize price",
+        "info": "Emphasizing the price will show the product's price above the title.",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "product_grid_image_style",
+        "label": "Product aspect ratio",
+        "info": "Using an uncropped setting will generate white space around the image to create a uniform grid without cropping your image. The background in the editor indicates the applied white space, but will not appear on your storefront.",
+        "options": [
+          {
+            "group": "Uncropped",
+            "value": "natural",
+            "label": "Natural"
+          },
+          {
+            "group": "Uncropped",
+            "value": "small",
+            "label": "Short (4:3)"
+          },
+          {
+            "group": "Uncropped",
+            "value": "medium",
+            "label": "Square (1:1)"
+          },
+          {
+            "group": "Uncropped",
+            "value": "large",
+            "label": "Tall (2:3)"
+          },
+          {
+            "group": "Cropped",
+            "value": "cropped-small",
+            "label": "Short (4:3)"
+          },
+          {
+            "group": "Cropped",
+            "value": "cropped-medium",
+            "label": "Square (1:1)"
+          },
+          {
+            "group": "Cropped",
+            "value": "cropped-large",
+            "label": "Tall (2:3)"
+          }
+        ],
+        "default": "natural"
+      },
+      {
+        "type": "header",
+        "content": "Product grid buttons"
+      },
+      {
+        "type": "paragraph",
+        "content": "Product grid buttons show only on screens 1024px and wider."
+      },
+      {
+        "type": "checkbox",
+        "id": "product_grid_quick_look",
+        "label": "Show \"Quick look\" button",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "product_grid_quick_buy",
+        "label": "Show \"Add to cart\" button",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Social accounts",
+    "settings": [
+      {
+        "type": "text",
+        "id": "social_facebook",
+        "label": "Facebook",
+        "info": "https:\/\/facebook.com\/mdevdigital"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter",
+        "label": "Twitter",
+        "info": "https:\/\/twitter.com\/mdevdigital"
+      },
+      {
+        "type": "text",
+        "id": "social_google",
+        "label": "Google+",
+        "info": "https:\/\/plus.google.com\/+shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_pinterest",
+        "label": "Pinterest",
+        "info": "https:\/\/pinterest.com\/mdevdigital"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram",
+        "label": "Instagram",
+        "info": "https:\/\/instagram.com\/mdevdigital"
+      },
+      {
+        "type": "text",
+        "id": "social_tumblr",
+        "label": "Tumblr",
+        "info": "http:\/\/shopify.tumblr.com"
+      },
+      {
+        "type": "text",
+        "id": "social_vimeo",
+        "label": "Vimeo",
+        "info": "https:\/\/vimeo.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_youtube",
+        "label": "YouTube",
+        "info": "https:\/\/www.youtube.com\/shopify"
+      },
+      {
+        "type": "text",
+        "id": "social_email",
+        "label": "Email address",
+        "info": "info@example.com"
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "32 x 32px .png required"
+      }
+    ]
+  },
+  {
+    "name": "Currency",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_currency_converter",
+        "label": "Enable currency conversion",
+        "default": true,
+        "info": "Even though prices are displayed in different currencies, orders will still be processed in your store's currency."
+      },
+      {
+        "type": "select",
+        "id": "currency_display_format",
+        "label": "Format",
+        "options": [
+          {
+            "value": "money_format",
+            "label": "Without currency ($10.00)"
+          },
+          {
+            "value": "money_with_currency_format",
+            "label": "With currency ($10.00 CAD)"
+          }
+        ],
+        "default": "money_with_currency_format"
+      },
+      {
+        "type": "text",
+        "id": "currency_converter_currencies",
+        "label": "Supported currencies",
+        "default": "INR GBP CAD USD AUD EUR JPY",
+        "info": "Use the country's ISO [currency code](http:\/\/www.xe.com\/iso4217.php). Separate your currency codes with a space."
+      },
+      {
+        "type": "text",
+        "id": "currency_converter_default",
+        "label": "Default currency",
+        "default": "USD"
+      }
+    ]
+  },
+  {
+    "name": "Advanced",
+    "settings": [
+      {
+        "type": "header",
+        "content": "\"Continue shopping\" link"
+      },
+      {
+        "type": "url",
+        "id": "continue_shopping_url",
+        "label": "Continue shopping link",
+        "info": "Where to direct customers after clicking \"Continue shopping\""
+      },
+      {
+        "type": "checkbox",
+        "id": "continue_url_cart",
+        "label": "Show on \"Cart\" page",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "continue_url_404",
+        "label": "Show on \"404\" page",
+        "default": true
+      }
+    ]
+  }
+]
