@@ -42,7 +42,7 @@
     {% if page_description != blank %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
-
+    
     {% include 'favicon' %}
 
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -71,7 +71,10 @@
 
     <main class="site-main">
     
-    
+    {{ content_for_layout }}
     
     </main>
-    </html>
+    
+    {% section 'static-footer' %}
+</body>
+</html>

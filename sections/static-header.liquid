@@ -1,0 +1,117 @@
+<header class="mdev-header">
+  {% if section.settings.header-bar-toggle  != false %}
+  <div class="mdev-announcement-bar" style="background-color: {{ section.settings.header-bar-bg-color }}">
+    <p style="color: {{ section.settings.header-bar-color }}">{{ section.settings.header-bar-message }}</p>
+  </div>
+  {% endif %}
+  <div class="mdev-main-wrapper flex flex-row flex-hor-between">
+    <div class="mdev-header-logo">
+      <img src="{{ section.settings.header-logo | img_url }}" />
+    </div>
+    {% if section.settings.search-toggle  != false %}
+  <div class="mdev-header-search">
+    {% include 'header-search-form', quick_links: linklists[section.settings.quick_links], enable_live_search: section.settings.enable_live_search, enable_images: section.settings.enable_live_search_images, enable_content: section.settings.enable_live_search_articles_pages %}
+    </div>
+    {% endif %}
+    <div class="mdev-cart">
+    <a class="site-header-cart--button" href="/cart">
+      <span
+        class="site-header-cart--count {% if cart.item_count > 0 %}visible{% endif %}"
+        data-header-cart-count="{% if cart.item_count > 0 %}{{ cart.item_count }}{% endif %}">
+      </span>
+
+      {% include 'icon-cart' %}
+      
+    </a>
+  </div>
+  </div>
+  <section class="mdev-header-nav">
+    <div class="mdev-main-wrapper flex flex-row flex-hor-between">
+      <div class="mdev-main-nav flex flex-row flex-hor-between">
+    {% for link in linklists.main-menu.links %}
+      <a href="{{ link.url }}">{{ link.title }}</a>
+	{% endfor %}
+      </div>
+  {% if shop.customer_accounts_enabled %}
+     <div class="site-header-actions flex flex-row flex-hor-between" data-header-actions>
+    {% unless customer %}
+  	  <div class="site-header-account-link">
+        <a href="/account/register">
+          Register
+        </a>
+      </div>
+      <div class="site-header-account-link">
+        <a href="/account/login">
+          {{ 'header.account.login' | t }}
+        </a>
+      </div>
+    {% else %}
+      <div class="site-header-account-link">
+        <a href="/account">{{ 'header.account.title' | t }}</a>
+      </div>
+
+      <div class="site-header-account-link">
+        <a href="/account/logout">
+          {{ 'header.account.logout' | t }}
+        </a>
+      </div>
+    {% endunless %}
+      </div>
+  {% endif %}
+    </div>
+  </section>
+</header>
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "id": "header-logo",
+        "type": "image_picker",
+        "label": "Select Logo"
+      },
+	  {
+      "id": "header-menu",
+      "type": "link_list",
+      "label": "Navigation Menu",
+      "default": "main-menu"
+    },
+
+	{
+      "id": "search-toggle",
+      "type": "checkbox",
+      "label": "Show Search Bar?",
+	  "default":   true
+    },
+
+	{
+      "id": "header-bar-toggle",
+      "type": "checkbox",
+      "label": "Show Announcement bar?",
+	  "default":   false
+    },
+
+	{
+      "id": "header-bar-message",
+      "type": "text",
+      "label": "Announcement Message"
+    },
+
+	{
+      "id": "header-bar-bg-color",
+	  "type": "color",
+      "label": "Background color"
+	},
+	{
+      "id": "header-bar-color",
+	  "type": "color",
+      "label": "Font Color"
+	}
+
+
+
+    ]
+
+  }
+{% endschema %}

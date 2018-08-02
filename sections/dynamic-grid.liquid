@@ -1,0 +1,64 @@
+<section class="mdev-grid">
+  <div class="mdev-main-wrapper">
+    <h2 style="text-align: center;"> {{ section.settings.grid-title }} </h2>
+    <div class="mdev-grid-wrapper flex flex-row flex-hor-around flex-wrap">
+  		{% for block in section.blocks %}
+      <a class="mdev-grid-block" href="{{ block.settings.block-link }}" style="background-image: url('{{ block.settings.block-bg | img_url }}'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+      </a>
+  		{% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Grid",
+	"max_blocks": 4,
+  "settings": [
+    {
+      "id": "grid-title",
+      "type": "text",
+      "label": "Heading",
+      "default": "Grid Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "select",
+      "name": "Block",
+      "settings": [
+		{
+          "id": "block-bg",
+          "type": "image_picker",
+		  "label": "Background Image"
+        },
+        {
+          "id": "block-link",
+          "type": "url",
+       		"label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Grid",
+      "category": "Visual",
+      "blocks": [
+        { 
+          "type": "select"
+        },
+        {
+          "type": "select"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

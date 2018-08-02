@@ -1,0 +1,100 @@
+<footer class="mdev-footer">
+  <div class="mdev-main-wrapper">
+        <div class="footer-inner flex flex-row flex-hor-between">
+    	{% for block in section.blocks %}
+    		{% include 'footer-block' %}
+    	{% endfor %}
+   		</div>
+    {% if section.settings.copyright-toggle != false %}
+    <div class="copyright">
+      <p>Copyright &copy; {{ 'now' | date: "%Y" }} {{ shop.name }}</p>
+    </div>
+    {% endif %}
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "Footer",
+	"settings":[
+	{
+      "id": "copyright-toggle",
+      "type": "checkbox",
+      "label": "Show Copyright text?",
+	  "default":   true
+    }
+],
+  "max_blocks": 5,
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Menu",
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu",
+          "info": "This menu won't show dropdown items."
+        }
+      ]
+    },
+    {
+      "type": "rich_text",
+      "name": "Rich text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Rich text"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.</p>"
+        }
+      ]
+    },
+    {
+      "type": "social_accounts",
+      "name": "Social accounts",
+      "limit": 1,
+      "settings": [
+
+		{
+         "type": "text",
+         "id": "email",
+		 "label": "Email"
+       },
+       {
+         "type": "text",
+         "id": "facebook",
+		 "label": "Facebook"
+       },
+	   {
+         "type": "text",
+         "id": "twitter",
+		 "label": "Twitter"
+       },
+	   {
+         "type": "text",
+         "id": "instagram",
+		 "label": "Instagram"
+       },
+	   {
+         "type": "text",
+         "id": "pinterest",
+		 "label": "Pinterest"
+       },
+	   {
+         "type": "text",
+         "id": "youtube",
+		 "label": "Youtube"
+       }
+      ]
+    }
+  ]
+}
+
+{% endschema %}

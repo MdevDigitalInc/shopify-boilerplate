@@ -1,0 +1,36 @@
+<section class="mdev-hero" style="background-image: url('{{ section.settings.home-hero | img_url }}'); background-repeat: no-repeat; background-position: center center; background-size: cover; height: {{ section.settings.home-hero-height }}px; content: "";">
+  
+</section>
+
+{% schema %}
+  {
+    "name": "Hero",
+    "settings": [
+      {
+        "id": "home-hero",
+        "type": "image_picker",
+        "label": "Hero Background"
+      },
+
+	  {
+        "id": "home-hero-height",
+        "type": "text",
+        "label": "Height (in px)"
+      }
+    ],
+
+"presets": [
+    {
+      "name": "Hero Image",
+      "category": "Visual"
+    }
+  ]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
